@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'WilddogBoardDemo2' do
+  # use_frameworks!
+
+  #引用SDK所在目录本地pod
+  pod 'WilddogBoard', :path => '../SDK/'
+
+  #七牛
+  pod 'Qiniu'
+
+end

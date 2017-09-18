@@ -1,0 +1,22 @@
+{
+  "name": "WilddogBoard",
+  "version": "1.0.0",
+  "summary": "aaaaaaa",
+  "description": "bbbbbbbbbbbbbbbb",
+  "homepage": "https://www.wilddog.com/",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2017 Wilddog"
+  },
+  "authors": {
+    "Wilddog": "ceo@wilddog.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.0.1"
+  },
+  "vendored_frameworks": "Framework/WilddogBoard.framework"
+}
