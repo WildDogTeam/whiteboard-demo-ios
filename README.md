@@ -1,4 +1,4 @@
-# iOS WilddogBoard & ToolBar 使用指南 - 内部
+# iOS WilddogBoard & ToolBar 使用指南
 
 ## 一，集成部分
 ### 1，集成WilddogBoard - SDK 即白板SDK
