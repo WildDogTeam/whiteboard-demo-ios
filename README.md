@@ -9,7 +9,7 @@ example：```pod 'WilddogBoard', :path => '../SDK/'```
 
 ###2，集成ToolBar
 直接把整个ToolBar文件夹拖入工程中，注意拖入过程中的选择。
- ![image](https://github.com/976431yang/YQCalendarView/blob/master/DEMO/ScreenShot/screenshot.gif)
+ ![image](https://github.com/WildDogTeam/whiteboard-demo-ios/blob/master/DEMO/ScreenShot/屏幕快照%202017-08-31%2014.39.49.png)
 
 ###3,集成工具栏所需依赖库
 七牛云储存：
@@ -33,7 +33,7 @@ pod 'Qiniu'
 
 ###3，配置七牛
 打开“ToolBar/BoardToolBar.h”修改如下部分
-![image](https://github.com/976431yang/YQCalendarView/blob/master/DEMO/ScreenShot/screenshot.gif)
+![image](https://github.com/WildDogTeam/whiteboard-demo-ios/blob/master/DEMO/ScreenShot/屏幕快照%202017-08-31%2017.48.08.png)
 ###4，建立白板
 ```objc
 WDGBoard *boardView = [WDGBoard creatBoardWithAppID:@"wd**********"
