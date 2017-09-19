@@ -28,9 +28,9 @@
     //画布尺寸
     option.canvasSize = CGSizeMake(920, 720);
     
-    WDGBoard *boardView = [WDGBoard creatBoardWithAppID:@"wd7833141990rjbjlz"
-                                                   Path:@"developboard"
-                                                 userID:@"ZYF"
+    WDGBoard *boardView = [WDGBoard creatBoardWithAppID:@"************"
+                                                   Path:@"************"
+                                                 userID:@"************"
                                                opthions:option];
     
     boardView.frame = CGRectMake(55, 0,

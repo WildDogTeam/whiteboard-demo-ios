@@ -10,10 +10,10 @@
 
 @import WilddogBoard;
 
-#define QiniuAK       @"sg9tqMnbcbY5VOf1ViSbOOIZKQPjuArucy1O03HL"
-#define QiniuSK       @"Wzb-638xmvujm7kmFnVfdKSn9POtneDCg_Mz_TQS"
-#define QiniuRoomName @"temptest"
-#define QiniuRoomURL  @"http://ov6mr9pi9.bkt.clouddn.com/"
+#define QiniuAK       @"qSIHb2rWYZNiE80*************************"
+#define QiniuSK       @"3bKGdYSjVgnIATs*************************"
+#define QiniuRoomName @"************"
+#define QiniuRoomURL  @"http://*******.bkt.clouddn.com/"
 
 
 @interface BoardToolBar : UIView
