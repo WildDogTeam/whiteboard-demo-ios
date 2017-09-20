@@ -25,8 +25,8 @@
     
     //本DEMO为iPhone横屏演示
     WDGBoardOptions *option = [WDGBoardOptions defaultOptions];
-    //画布尺寸
-    option.canvasSize = CGSizeMake(920, 720);
+    //画布尺寸，保持与其它端统一
+    option.canvasSize = CGSizeMake(1366, 768);
     
     WDGBoard *boardView = [WDGBoard creatBoardWithAppID:@"************"
                                                    Path:@"************"

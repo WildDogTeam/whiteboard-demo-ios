@@ -31,11 +31,11 @@
 
 -(NSArray *)colorArr{
     return @[
-             [UIColor colorWithRed:0.974 green:0.144 blue:0.174 alpha:1.000],
-             [UIColor colorWithRed:0.982 green:0.510 blue:0.120 alpha:1.000],
-             [UIColor colorWithRed:0.274 green:0.827 blue:0.342 alpha:1.000],
-             [UIColor colorWithRed:0.085 green:0.402 blue:0.973 alpha:1.000],
-             [UIColor colorWithWhite:0.751 alpha:1.000],
+             [UIColor colorWithRed:0.992 green:0.243 blue:0.224 alpha:1.000],
+             [UIColor colorWithRed:0.992 green:0.584 blue:0.153 alpha:1.000],
+             [UIColor colorWithRed:0.318 green:0.843 blue:0.416 alpha:1.000],
+             [UIColor colorWithRed:0.086 green:0.502 blue:0.980 alpha:1.000],
+             [UIColor colorWithWhite:0.796 alpha:1.000],
              [UIColor colorWithWhite:0.042 alpha:1.000]
              ];
 }
