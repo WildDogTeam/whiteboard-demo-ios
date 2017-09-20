@@ -625,13 +625,13 @@
                                                           roomName:QiniuRoomName
                                                          SecretKey:QiniuSK
                                                          AccessKey:QiniuAK];
-    NSLog(@"%@",token);
+    //NSLog(@"%@",token);
     QNConfiguration *config =[QNConfiguration build:^(QNConfigurationBuilder *builder) {
         NSMutableArray *array = [[NSMutableArray alloc] init];
         [array addObject:[QNResolver systemResolver]];
         QNDnsManager *dns = [[QNDnsManager alloc] init:array networkInfo:[QNNetworkInfo normal]];
         //是否选择  https  上传
-        builder.zone = [[QNAutoZone alloc] initWithHttps:YES dns:dns];
+        builder.zone = [[QNAutoZone alloc]initWithDns:dns];
         //设置断点续传
         NSError *error;
         builder.recorder =  [QNFileRecorder fileRecorderWithFolder:@"temptest" error:&error];

@@ -424,8 +424,10 @@
             {
                 if(self.selectingObject){
                     [self.board removeObjectWithObject:self.selectingObject];
+                    self.selectingObject = nil;
                 }else if(self.selectingStaticObject){
                     [self.board removeObjectWithObject:self.selectingStaticObject];
+                    self.selectingStaticObject = nil;
                 }else{
                     //取父级VC
                     id target=self;
@@ -462,6 +464,7 @@
                     }
                 }
                 UIViewController *VC = target;
+                [VC.navigationController popViewControllerAnimated:YES];
                 
                 ZLPhotoActionSheet *actionSheet = [[ZLPhotoActionSheet alloc] init];
                 actionSheet.allowSelectVideo        = NO;
@@ -622,13 +625,13 @@
                                                           roomName:QiniuRoomName
                                                          SecretKey:QiniuSK
                                                          AccessKey:QiniuAK];
-    NSLog(@"%@",token);
+    //NSLog(@"%@",token);
     QNConfiguration *config =[QNConfiguration build:^(QNConfigurationBuilder *builder) {
         NSMutableArray *array = [[NSMutableArray alloc] init];
         [array addObject:[QNResolver systemResolver]];
         QNDnsManager *dns = [[QNDnsManager alloc] init:array networkInfo:[QNNetworkInfo normal]];
         //是否选择  https  上传
-        builder.zone = [[QNAutoZone alloc] initWithHttps:YES dns:dns];
+        builder.zone = [[QNAutoZone alloc]initWithDns:dns];
         //设置断点续传
         NSError *error;
         builder.recorder =  [QNFileRecorder fileRecorderWithFolder:@"temptest" error:&error];

@@ -15,7 +15,7 @@ example：```pod 'WilddogBoard', :path => '../SDK/'```
 七牛云储存：
 
 ```objc
-pod 'Qiniu'
+pod 'Qiniu','7.1.7'
 ```
 
 ## 二，使用部分
