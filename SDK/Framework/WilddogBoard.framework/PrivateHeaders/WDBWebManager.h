@@ -16,6 +16,8 @@
 
 @property (nonatomic,strong) WDBJSManager *JSManager;
 
+@property (nonatomic,assign) BOOL allowUserScroll;
+
 - (void)setUpWithSize:(CGSize)Size;
 
 - (void)changeSize:(CGSize)Size;
@@ -29,4 +31,11 @@
 
 - (void)changeBackGroundColor:(UIColor *)color;
 
+
+//internal
+@property (nonatomic,strong) UIScrollView *mainSCRV;
+@property (nonatomic,strong) UIActivityIndicatorView *activeView;
+@property (nonatomic,strong) UILabel *activeLab;
+
 @end
+

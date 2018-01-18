@@ -464,7 +464,7 @@
                     }
                 }
                 UIViewController *VC = target;
-                [VC.navigationController popViewControllerAnimated:YES];
+//                [VC.navigationController popViewControllerAnimated:YES];
                 
                 ZLPhotoActionSheet *actionSheet = [[ZLPhotoActionSheet alloc] init];
                 actionSheet.allowSelectVideo        = NO;

@@ -28,10 +28,19 @@
     //画布尺寸，保持与其它端统一
     option.canvasSize = CGSizeMake(1366, 768);
     
+    //********************************************************************
+    
+    //配置好以后去掉此行
+    NSAssert(NO, @"请先配置AppID等相关内容");
+    
+    
     WDGBoard *boardView = [WDGBoard creatBoardWithAppID:@"************"
                                                    Path:@"************"
                                                  userID:@"************"
                                                opthions:option];
+    
+    //********************************************************************
+    
     
     boardView.frame = CGRectMake(55, 0,
                                  self.view.frame.size.width-55,

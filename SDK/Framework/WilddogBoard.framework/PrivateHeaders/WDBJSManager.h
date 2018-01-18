@@ -66,6 +66,8 @@
 
 - (void)setToolPenWithWDColor:(WDBColor *)color Size:(float)size;
 
+- (void)setToolSingleSyncPenWithWDColor:(WDBColor *)color Size:(float)size;
+
 - (void)setToolLineWithWDColor:(WDBColor *)color Size:(float)size;
 
 - (void)setToolTextWithWDColor:(WDBColor *)color Size:(float)size;
@@ -138,4 +140,10 @@
 //移除所有监听
 - (void)RemoveAllCalbacks;
 
+#pragma mark -------internal
+
+@property (nonatomic,strong) UIActivityIndicatorView *activeView;
+@property (nonatomic,strong) UILabel *activeLab;
+
+- (void)destory;
 @end

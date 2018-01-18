@@ -189,6 +189,8 @@ typedef NS_ENUM(NSInteger, WDGBoardToolType){
     WDGBoardToolTypeDefault,
     //画笔工具
     WDGBoardToolTypePen,
+    //画笔工具-每笔画完之后再做数据同步
+    WDGBoardToolTypeSingleSyncPen,
     //直线工具
     WDGBoardToolTypeLine,
     //文字工具
@@ -293,6 +295,8 @@ typedef NS_ENUM(NSInteger, WDGBoardToolType){
  *  @param block 获取的回调
  */
 - (void)getAllShowingObjectWithBlock:(void(^)(NSArray<WDGBoardObject *>* objects,NSError *error))block;
+
+- (void)destroy;
 @end
 
 
